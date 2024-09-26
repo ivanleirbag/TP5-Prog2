@@ -1,0 +1,40 @@
+.top-bg{
+    background-image: url("../assets/misc/encabezado.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+}
+
+.text-orange{
+    color: #FD4918;
+}
+
+.page-header{
+    font-size: 1rem;
+}
+
+.page-header a{
+    font-size: 0.6em;
+    padding: 0.2em 0.2em 0 0.2em;
+    height: fit-content;
+}
+
+.page-header p{
+    font-size: 0.3em;
+    margin-bottom: 0.4em;
+    margin-top: -1em;
+}
+
+.page-header h1{
+    font-size: 3.5em;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-family: "Encode Sans Condensed", sans-serif;
+    text-shadow: 1px 1px 6px #000000;
+}
+
+.page-navbar{
+    font-size: 1rem;
+    background-color: #383838;
+    padding: 5px;
+}
