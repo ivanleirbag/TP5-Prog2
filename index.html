@@ -21,72 +21,60 @@
 </head>
 <body>
     <!--Page Header-->
-    <div class="container-fluid top-bg page-header text-light">
+    <div class="container w-100 top-bg page-header text-light">
         <!--Page Social Medias-->
-        <div class="d-inline-flex align-top justify-content-center w-100 page-header">
-            <a href="https://www.facebook.com/" class="text-light px-1"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://ar.pinterest.com/" class="text-light px-1"><i class="fa-brands fa-pinterest-p"></i></a>
-            <a href="https://www.youtube.com/?app=desktop&hl=es" class="text-light px-1"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" class="text-light px-1"><i class="fa-brands fa-instagram"></i></a>
+        <div class="row page-header">
+            <div class="col-12 d-inline-flex justify-content-center align-top w-100">
+                <a href="https://www.facebook.com/" class="text-light px-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://ar.pinterest.com/" class="text-light px-1"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="https://www.youtube.com/?app=desktop&hl=es" class="text-light px-1"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la" class="text-light px-1"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
         <!--Fecha y Lugar-->
-        <div class="container page-header px-5">
-            <div class="row text-light">
-                <div class="col-6 d-inline-flex justify-content-start align-items-end">
-                    <a href="#"><i class="fa-regular fa-calendar-days text-orange"></i></a>
-                    <p>10-12 DIC</p>
-                </div>
-                <div class="col-6 d-inline-flex justify-content-end align-items-end">
-                    <a href="#"><i class="fa-solid fa-location-dot text-orange"></i></a>
-                    <p>CONCORDIA, ER</p>
-                </div>
+        <div class="row page-header text-light">
+            <div class="col-6 d-inline-flex justify-content-start align-items-end">
+                <a href="#"><i class="fa-regular fa-calendar-days text-orange"></i></a>
+                <p>10-12 DIC</p>
+            </div>
+            <div class="col-6 d-inline-flex justify-content-end align-items-end">
+                <a href="#"><i class="fa-solid fa-location-dot text-orange"></i></a>
+                <p>CONCORDIA, ER</p>
             </div>
         </div>
         <!--Main Title-->
-        <div class="page-header d-flex w-100 justify-content-center">
-            <h1><span style="position: relative; top: 3px;">S</span><span style="position: relative; top: -3px;">H</span><span>O</span><span>W</span> <span>W</span><span style="position: relative; top: 3px; left: -6px;">E</span><span style="position: relative; top: -2px;">B</span></h1>
+        <div class="page-header row">
+            <div class="col-12  d-flex justify-content-center">
+                <h1><span style="position: relative; top: 0.4vw;">S</span><span style="position: relative; top: -0.4vw;">H</span><span>O</span><span>W</span> <span>W</span><span style="position: relative; top: 0.8vw; left: -1.2vw;">E</span><span style="position: relative; top: -0.4vw;">B</span></h1>
+            </div>
         </div>
         <div class="page-header d-flex w-100 justify-content-center">
             <p>La mejor conferencia de <b>diseño web</b></p>
         </div>
     </div>
     <!--Navbar-->
-    <div class="page-navbar text-light">
-        <nav class="navbar p-0 navbar-expand-md header d-inline-flex w-100">
-            <a 
-            class="navbar-brand w-25 
-              p-0 d-inline-flex align-content-center" 
-            href="#">
-                <img src="assets/imagenes/logo-utn.png"class="" id="logo" alt="">
-                <p class="text-light" id="logo">FRCon</p>
+    <div class="container page-navbar text-light p-0">
+        <nav class="row navbar navbar-expand-md d-flex w-100">
+            <!--Page Icon-->
+            <a class="navbar-brand col-6 p-0 m-0 d-flex align-items-center" href="#">
+                <div id="navbar-icon"></div>
+                <h2 class="text-light m-0">SHOW WEB</h2>
             </a>
-            <button class="navbar-toggler" type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbarSupportedContent1"
-                    aria-controls="navbarSupportedContent1" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-light" style="align-content: center;"><i class="fas fa-bars"></i></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-opts">
-                  <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">La Conferencia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Los oradores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Lugar y Fecha</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Conviértete en un orador</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Comprar Tickets</a>
-                  </li>
-                </ul>
-            </div>
+            <!--Navigation-->
+            <ul class="navbar-nav col-6 d-flex flex-row align-items-center justify-content-between p-0">
+                <li class="nav-item">
+                    <a class="nav-link active py-0" aria-current="page" href="#"><p>CONFERENCIA</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#"><p>CALENDARIO</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-0" href="#"><p>INVITADOS</p></a>
+                </li>
+                <li class="nav-item navbar-button">
+                    <a class="nav-link py-0" href="#"><p>RESERVACIONES</p></a>
+                </li>
+            </ul>
         </nav>
     </div>
     

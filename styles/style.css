@@ -25,8 +25,12 @@
     margin-top: -1em;
 }
 
+.page-header .col-6{
+    padding: 0 10vw 0 10vw;
+}
+
 .page-header h1{
-    font-size: 3.5em;
+    font-size: 12vw;
     margin-bottom: 0;
     font-weight: 600;
     font-family: "Encode Sans Condensed", sans-serif;
@@ -36,5 +40,54 @@
 .page-navbar{
     font-size: 1rem;
     background-color: #383838;
-    padding: 5px;
+}
+
+.container .page-navbar{
+    padding: 0;
+}
+
+.navbar-toggler i{
+    font-size: 0.7em;
+}
+
+.page-navbar h2{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.page-navbar li{
+    margin: 0;
+}
+
+.page-navbar a{
+    color: white;
+}
+
+.page-navbar .navbar-button{
+    padding: 0.3em 0.3em 0.3em 0.6em;
+    border-color: #FD4918;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.navbar-button:hover{
+    border-width: 3px;
+}
+
+.navbar-button p{
+    color:#FD4918;
+}
+
+.page-navbar p{
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-size: 0.4em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#navbar-icon{
+    background-color: #FD4918;
+    height: 0.8em;
+    width: 0.2em;
+    margin: 0 5px 0 5vw;
 }
