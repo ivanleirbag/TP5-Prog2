@@ -21,7 +21,7 @@
 </head>
 <body>
     <!--Page Header-->
-    <div class="container w-100 top-bg page-header text-light">
+    <div class="container-fluid w-100 top-bg page-header text-light m-0">
         <!--Page Social Medias-->
         <div class="row page-header">
             <div class="col-12 d-inline-flex justify-content-center align-top w-100">
@@ -53,28 +53,34 @@
         </div>
     </div>
     <!--Navbar-->
-    <div class="container page-navbar text-light p-0">
-        <nav class="row navbar navbar-expand-md d-flex w-100">
+    <div class="container-fluid page-navbar text-light p-0">
+        <nav class="row navbar navbar-expand-sm d-flex w-100">
             <!--Page Icon-->
-            <a class="navbar-brand col-6 p-0 m-0 d-flex align-items-center" href="#">
+            <a class="page-navbar col-6 p-0 m-0 d-flex align-items-center" href="#">
                 <div id="navbar-icon"></div>
                 <h2 class="text-light m-0">SHOW WEB</h2>
             </a>
+             <!--Navbar Toggler-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="text-light fa-solid fa-bars"></i>
+            </button>
             <!--Navigation-->
-            <ul class="navbar-nav col-6 d-flex flex-row align-items-center justify-content-between p-0">
-                <li class="nav-item">
-                    <a class="nav-link active py-0" aria-current="page" href="#"><p>CONFERENCIA</p></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link py-0" href="#"><p>CALENDARIO</p></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link py-0" href="#"><p>INVITADOS</p></a>
-                </li>
-                <li class="nav-item navbar-button">
-                    <a class="nav-link py-0" href="#"><p>RESERVACIONES</p></a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav col-sm-6 col-12 pt-sm-0 pt-2 d-flex flex-row align-items-center justify-content-between p-0">
+                    <li class="nav-item">
+                        <a class="nav-link active py-0" aria-current="page" href="#"><p>CONFERENCIA</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="#"><p>CALENDARIO</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-0" href="#"><p>INVITADOS</p></a>
+                    </li>
+                    <li class="navbar-button">
+                        <a class="nav-link py-0" href="#"><p>RESERVACIONES</p></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
     

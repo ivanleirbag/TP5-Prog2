@@ -2,12 +2,16 @@
     background-image: url("../assets/misc/encabezado.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vw;
+    min-height: 50vw;
+    width: 100vw;
 }
 
 .text-orange{
     color: #FD4918;
 }
+
+
+
 
 .page-header{
     font-size: 1rem;
@@ -37,9 +41,17 @@
     text-shadow: 1px 1px 6px #000000;
 }
 
+
+
+
+
 .page-navbar{
     font-size: 1rem;
     background-color: #383838;
+}
+
+.page-navbar nav{
+    padding: 1vw 5vw 1vw 5vw;
 }
 
 .container .page-navbar{
@@ -48,11 +60,6 @@
 
 .navbar-toggler i{
     font-size: 0.7em;
-}
-
-.page-navbar h2{
-    font-size: 0.8em;
-    font-weight: 700;
 }
 
 .page-navbar li{
@@ -64,14 +71,24 @@
 }
 
 .page-navbar .navbar-button{
-    padding: 0.3em 0.3em 0.3em 0.6em;
+    height: fit-content;
+    width: fit-content;
     border-color: #FD4918;
     border-style: solid;
     border-width: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-navbar .navbar-button p{
+    padding: 0.9em 0.9em 0.9em 1.8em;
 }
 
 .navbar-button:hover{
-    border-width: 3px;
+    background-color: #FD4918;
+}
+
+.navbar-button p:hover{
+    color: #383838;
 }
 
 .navbar-button p{
@@ -80,14 +97,100 @@
 
 .page-navbar p{
     font-family: "Encode Sans Condensed", sans-serif;
-    font-size: 0.4em;
+    font-size: 0.35em;
     font-weight: 600;
     margin-bottom: 0;
+}
+
+.page-navbar a{
+    text-decoration: none;
+}
+
+.page-navbar h2{
+    font-size: 0.8em;
+    font-weight: 700;
 }
 
 #navbar-icon{
     background-color: #FD4918;
     height: 0.8em;
     width: 0.2em;
-    margin: 0 5px 0 5vw;
+    margin-right: 0.2em;
+}
+
+.page-navbar .nav-item p{
+    position: relative;
+    text-decoration: none; 
+}
+
+.page-navbar .nav-item a:hover{
+    color: #FD4918;
+}
+
+.page-navbar .nav-item p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: #FD4918;
+    transition: width 0.4s ease; 
+}
+
+.page-navbar .nav-item p:hover::after {
+    width: 100%; 
+}
+
+.page-navbar .navbar-toggler{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 0;
+}
+
+@media screen and (min-width: 576px){
+    .page-header{
+        font-size: 1.5rem;
+    }
+
+    .page-navbar{
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .page-header{
+        font-size: 2rem;
+    }
+
+    .page-navbar{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    .page-header{
+        font-size: 2rem;
+    }
+
+    .page-navbar{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    .page-header{
+        font-size: 3rem;
+    }
+
+    .page-navbar{
+        font-size: 3rem;
+    }
+    
 }
