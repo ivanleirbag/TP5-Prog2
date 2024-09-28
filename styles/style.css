@@ -27,6 +27,7 @@
     font-size: 0.3em;
     margin-bottom: 0.4em;
     margin-top: -1em;
+    text-shadow: 1px 1px 6px #000000;
 }
 
 .page-header .col-6{
@@ -219,6 +220,13 @@
 }
 
 
+.prices-card{
+    background-color: white;
+    border: #E7E7E7;
+    border-style: solid;
+    padding: 3vw 5vw;
+}
+
 .prices{
     background-color: #F2F2F2;
     font-size: 1rem;
@@ -236,8 +244,65 @@
     margin-bottom: 0;
 }
 
+.prices h5{
+    font-size: 2em;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 700;
+    margin: 0.3em;
+}
 
+.prices h4{
+    font-size: 0.6em;
+    color: #FD4918;
+    margin-bottom: 1em;
+}
 
+.prices p{
+    margin-top: 1em;
+    font-size: 0.4em;
+}
+
+.prices a{
+    margin-top: 0.3em;
+}
+
+.buy-button-empty{
+    font-size: 0.6em;
+    color: #FD4918;
+    text-decoration: none;
+
+    padding: 0.4em 1.6em;
+
+    background-color: inherit;
+    border: #FD4918;
+    border-style: solid;
+    border-width: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-button-empty:hover{
+    color: white;
+    background-color: #FD4918;
+}
+
+.buy-button-fill{
+    font-size: 0.6em;
+    color: white;
+    text-decoration: none;
+
+    padding: 0.4em 1.6em;
+
+    background-color: #FD4918;
+    border: #FD4918;
+    border-style: solid;
+    border-width: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-button-fill:hover{
+    background-color: white;
+    color: #FD4918;
+}
 
 
 @media screen and (min-width: 576px){
@@ -251,6 +316,10 @@
 
     .invitados{
         font-size: 0.8rem;
+    }
+
+    .prices{
+        font-size: 1rem;
     }
     
 }
@@ -268,21 +337,14 @@
     .invitados{
         font-size: 1rem;
     }
+
+    .prices{
+        font-size: 1.3rem;
+    }
     
 }
 
 @media screen and (min-width: 992px){
-    .page-header{
-        font-size: 2rem;
-    }
-
-    .page-navbar{
-        font-size: 2rem;
-    }
-
-    .invitados{
-        font-size: 1rem;
-    }
     
 }
 
@@ -297,6 +359,10 @@
     
     .invitados{
         font-size: 1.5rem;
+    }
+
+    .prices{
+        font-size: 2rem;
     }
 
 }
